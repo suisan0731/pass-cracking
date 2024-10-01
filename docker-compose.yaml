@@ -3,7 +3,7 @@ services:
     build: ./
     volumes:
       - ./:/app
-    command: "python3 ./api/main.py"
+    command: "python3 ./api/index.py"
     tty: true
     stdin_open: true
     ports:
