@@ -9,7 +9,7 @@
 ```
 指定例  
 ```
-Authorization": "Bearer 1234"
+"Authorization": "Bearer 1234"
 ```
 ## パスワード
 パスワード`P`は以下が分かっている
@@ -25,13 +25,13 @@ pip install requests
 ```
 import requests
 
-req_path = 'https://sample.com/'
-headers = {'Content-Type': 'application/json'}
+req_path = 'https://pass-cracking.vercel.app/'
+headers = {'Authorization': 'Bearer 12345'}
 
 #リクエスト送信
-res = requests.get(req_path, header=header)
+res = requests.get(req_path, headers=headers)
 
-#レスポンスを文字列として変数に代入
+#レスポンスを文字列として変数に代入・表示
 message_res: str = res.content.decode()
 print(message_res)
 ```
