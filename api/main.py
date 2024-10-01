@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 
-if os.path.isfile('./.env'):
+if os.path.isfile('../.env'):
     load_dotenv()
 
 @app.route('/')
